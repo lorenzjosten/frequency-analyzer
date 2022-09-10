@@ -1,3 +1,6 @@
 [submodule "frontend"]
 	path = frontend
 	url = https://gitlab.com/frequency-analyzer/frontend.git
+[submodule "backend"]
+	path = backend
+	url = https://gitlab.com/frequency-analyzer/backend.git

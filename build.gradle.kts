@@ -1,17 +1,15 @@
-defaultTasks(":clean", ":build", ":run")
+defaultTasks(":clean", ":run")
 
 group = "io.github"
 version = "1.0"
 
 val clean by tasks.registering {
-   dependsOn(gradle.includedBuild("frontend").task(":clean"))
-   dependsOn(gradle.includedBuild("backend").task(":clean"))
-}
-
-val build by tasks.registering {
-   dependsOn(gradle.includedBuild("backend").task(":assemble"))
+    group = "build"
+    dependsOn(gradle.includedBuild("frontend").task(":clean"))
+    dependsOn(gradle.includedBuild("backend").task(":clean"))
 }
 
 val run by tasks.registering {
-   dependsOn(gradle.includedBuild("backend").task(":run"))
+    group = "application"
+    dependsOn(gradle.includedBuild("backend").task(":bootRun"))
 }

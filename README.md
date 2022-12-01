@@ -28,7 +28,7 @@ In order to run this app, please ensure these programs are installed on your pla
 Clone the app into a folder of your choice: 
 
 ```shell
-git clone -r https://gitlab.com/lj-work-sample/app
+git clone --recursive https://gitlab.com/lj-work-sample/app
 ```
 
 ## Execution

@@ -22,8 +22,9 @@ build_app_job:
       - ./backend/build/libs/backend-*.jar
 
 build_image_job:
+  stage: build_image
   needs:
-    - build_image
+    - build_app_job
   image: docker:stable
   services:
     - docker:stable-dind

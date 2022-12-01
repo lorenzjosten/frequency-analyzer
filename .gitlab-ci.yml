@@ -5,6 +5,7 @@ default:
 
 variables:
   GIT_STRATEGY: clone
+  GIT_SUBMODULE_STRATEGY: recursive
   GRADLE_OPTS: "-Dorg.gradle.daemon=false"
 
 stages:

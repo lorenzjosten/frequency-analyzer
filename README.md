@@ -9,14 +9,15 @@ Used technologies include:
 - server sent events
 - spring boot
 - kotlin
-- vue.js
+- vue.js 3
 - typescript
+- bootstrap5
 - gitlab pipelining
 - liquibase
 
 ## Prerequisites
 
-In order to run this app, the following programs have to be installed on your computer:
+In order to run this app, please ensure these programs are installed on your platform:
 
 - git
 - java
@@ -27,7 +28,7 @@ In order to run this app, the following programs have to be installed on your co
 Clone the app into a folder of your choice: 
 
 ```shell
-git clone -r https://gitlab.com/lj-work-sample/app
+git clone --recursive https://gitlab.com/lj-work-sample/app
 ```
 
 ## Execution

@@ -1,0 +1,22 @@
+---
+
+default:
+  image: adoptopenjdk/openjdk:11-alpine
+
+variables:
+  GIT_STRATEGY: clone
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
+
+stages:
+  - build
+  - containerize
+  - publish
+
+build_job:
+  stage: build
+  script:
+    - ./gradlew ::backend::build
+  artifacts:
+    name: bootJar
+    paths:
+      - ./backend/build/libs/backend-*.jar

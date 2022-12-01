@@ -17,11 +17,17 @@ Used technologies include:
 
 ## Prerequisites
 
+A gitlab account is required to access the code and container registry.
+
 In order to run this app, please ensure these programs are installed on your platform:
 
 - git
 - java
 - gradle
+
+Or
+
+- docker
 
 ## Download
 
@@ -32,6 +38,24 @@ git clone --recursive https://gitlab.com/lj-work-sample/app
 ```
 
 ## Execution
+
+### Docker
+
+Login to the gitlab registry: 
+
+```
+docker login registry.gitlab.com
+```
+
+Run the image:
+
+```
+docker run --rm --name frequency-analyzer -p8080:8080 registry.gitlab.com/lj-work-sample/app:latest
+```
+
+Wait until the app started up. Visit [http://localhost:8080](http://localhost:8080) with your browser.
+
+### Gradle build
 
 Change into the app folder. Make the gradle wrapper script executable:
 

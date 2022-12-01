@@ -45,4 +45,4 @@ Run the app:
 gradlew
 ```
 
-Wait until the app started up. Visit [http://localhost:8080](http://locahost:8080) with your browser.
+Wait until the app started up. Visit [http://localhost:8080](http://localhost:8080) with your browser.

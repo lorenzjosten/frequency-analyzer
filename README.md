@@ -11,8 +11,8 @@ Used technologies include:
 - kotlin
 - vue.js 3
 - typescript
-- bootstrap5
-- gitlab pipelining
+- bootstrap 5
+- gitlab ci
 - liquibase
 
 ## Prerequisites
@@ -31,7 +31,7 @@ Or
 
 ### Docker
 
-Create a container from the image int the gitlab registry and run it:
+Create a container from the image in the gitlab registry and run it:
 
 ```
 docker run -d --rm --name frequency-analyzer -p8080:8080 registry.gitlab.com/lj-work-sample/app:latest
